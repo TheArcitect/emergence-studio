@@ -1,0 +1,20 @@
+{
+  "project": "Emergence Studio",
+  "version": "v1.1",
+  "seed": 42,
+  "author": {
+    "name": "Michael Schaeffer",
+    "email": "michael@letsexperiment.com",
+    "linkedin": "https://www.linkedin.com/in/michael-schaeffer-ba3762382/",
+    "location": "Cape Coral, Florida, USA"
+  },
+  "artifacts": {
+    "brief.html": "<sha256-pending>",
+    "brief.pdf": "<sha256-pending>",
+    "results.csv": "<sha256-pending>",
+    "phase_heatmaps.png": "<sha256-pending>",
+    "delta_plots_v2.png": "<sha256-pending>"
+  },
+  "generated_at": "2025-10-02T20:21:09Z",
+  "notes": "PII stripped; deterministic rerun instructions included in brief."
+}
