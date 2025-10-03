@@ -1,0 +1,41 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Emergence Studio — Research Demo</title>
+<meta name="description" content="Landing + reproducible SharePack for Imagine with Claude research demo."/>
+<style>
+:root{--bg:#0b0f14;--card:#141a22;--text:#dce7f3;--muted:#93a6bd;--ok:#88ffbd}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.5 system-ui,Inter,Segoe UI,Roboto,Helvetica,Arial}
+.wrap{max-width:900px;margin:48px auto;padding:0 20px}.card{background:var(--card);border:1px solid #1f2833;border-radius:16px;padding:24px 28px;box-shadow:0 10px 30px rgba(0,0,0,.35)}
+h1{margin:0 0 8px;font-weight:700}h2{margin:24px 0 8px;font-weight:650}.muted{color:var(--muted)}
+.row{display:flex;flex-wrap:wrap;gap:10px}a.btn{display:inline-block;padding:10px 14px;border-radius:10px;border:1px solid #243142;text-decoration:none;color:var(--text)}
+a.btn.primary{background:#1e2a39}code,pre{background:#0f141b;border:1px solid #253245;border-radius:10px;padding:10px;display:block;overflow:auto}
+footer{margin:28px 0 0;color:#7c90a8}
+</style></head><body><main class="wrap"><section class="card">
+<h1>Emergence Studio <span class="muted">— Research Demo</span></h1>
+<p class="muted">Revealing phase shifts in accuracy under controlled stress.</p>
+
+<h2>Author & Contact</h2>
+<div><strong>Name:</strong> Michael Schaeffer • <strong>Email:</strong> <a href="mailto:michael@letsexperiment.com">michael@letsexperiment.com</a> •
+<strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/michael-schaeffer-ba3762382/" target="_blank" rel="noopener">linkedin.com/in/michael-schaeffer-ba3762382</a></div>
+
+<h2>Key Findings (v2)</h2>
+<ul>
+<li><strong>Phase bands:</strong> Tool-Use Chains, Table Reasoning, Math under noise/latency/token thresholds.</li>
+<li><strong>Deterministic repro:</strong> SHA256 + seed <code>42</code>; identical pass matrix confirmed.</li>
+<li><strong>Safety note:</strong> Disabling tool access can create new phase shifts independent of context length.</li>
+</ul>
+
+<h2>Deterministic Re-Run</h2>
+<pre><code>/emergence_studio --seed=42 --config=v1.1 --tasks=math,table,tool \
+  --stressors=context,noise,latency,paraphrase,tool_access</code></pre>
+
+<h2>Artifacts</h2>
+<div class="row">
+<a class="btn primary" href="#" target="_blank">Open Brief (HTML)</a>
+<a class="btn" href="#" target="_blank">Download Brief (PDF)</a>
+<a class="btn" href="provenance.json" target="_blank">provenance.json</a>
+<a class="btn" href="results.csv" target="_blank">results.csv</a>
+</div>
+
+<footer>© <span id="year"></span> Michael Schaeffer • Cape Coral, FL • <span style="color:var(--ok)">Reproducible</span></footer>
+</section></main><script>document.getElementById('year').textContent=(new Date).getFullYear()</script></body></html>
