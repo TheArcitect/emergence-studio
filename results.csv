@@ -1,0 +1,5 @@
+task,condition,tokens,latency_ms,noise_pct,tool_access,accuracy_pct,brier,ttfb_ms
+tool_use,free,512,390,0.0,on,83,0.168,370
+tool_use,strict,512,700,0.0,on,76,0.221,700
+table_reasoning,strict,1000,700,0.0,on,61,0.238,700
+math,noise,2000,400,3.0,on,71,0.245,410
